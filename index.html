@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head scroll-behavior: smooth;>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEDC</title>
+    <link rel="icon" type="image/x-icon" href="/images/IEDC White Logo title.png">
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootsrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/IEDC White Logo.png" alt="Logo"
+                        class="d-inline-block align-text-top logo d-flex justify-s">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#innovation">Innovation</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Registration
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><button type="button" class="btn dropdown-item" data-bs-toggle="modal"
+                                        data-bs-target="#loginInsti">
+                                        Institution
+                                    </button>
+                                </li>
+                                <li><button type="button" class="btn dropdown-item" data-bs-toggle="modal"
+                                        data-bs-target="#loginStu">
+                                        Student
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Login
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><button type="button" class="btn dropdown-item" data-bs-toggle="modal"
+                                        data-bs-target="#loginInsti">
+                                        Institution
+                                    </button>
+                                </li>
+                                <li><button type="button" class="btn dropdown-item" data-bs-toggle="modal"
+                                        data-bs-target="#loginStu">
+                                        Student
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <!-- student login -->
+        <div class="modal fade sm-mt-4" id="loginStu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- instisution login -->
+        <div class="modal fade" id="loginInsti" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Institution Login</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Instition Name</label>
+                                <input type="type" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mw-100 text-center">
+            <img src="images/pexels-pixabay-256514.jpg" class="bg" alt="" srcset="">
+        </div>
+        <div class="pre-container mw-100">
+            <div class="container p-2">
+                <div class="row d-flex justify-content-center align-self-center col-12">
+                    <div id="about">
+                        <h1 class="heading">Innovation and Entrepreneurship Development Centres (IEDC)</h1>
+                        <p>
+                            The Innovation and Entrepreneurship Development Centres (IEDC) are platforms set up in
+                            Engineering,
+                            Management, Arts & Science Colleges, Medical Institutions, Polytechnics and Universities
+                            with an
+                            aim
+                            to provide students with an opportunity to experiment and innovate. Kerala Startup Mission
+                            has
+                            set
+                            up IEDCs in 341 institutions across the State which provide avenues for creative students to
+                            learn,
+                            collaborate and transform their innovative ideas into prototypes of viable products and
+                            services.
+                            IEDCs works as the first launch pad for a student’s entrepreneurial journey and provide them
+                            with
+                            access to cutting edge technology, world-class infrastructure, high-quality mentorship,
+                            early
+                            risk
+                            capital and global exposure.
+
+                            Innovation and Entrepreneurship Development Centre (IEDC) is a flagship initiative of Kerala
+                            Startup
+                            Mission to promote innovation and entrepreneurship among the student and academic fraternity
+                            in
+                            the
+                            educational institutions in the State of Kerala and considered as an umbrella programme that
+                            would
+                            play an instrumental role in fostering innovation culture in Academic institutions.
+                        </p>
+                    </div>
+                    <div class="about">
+                        <h3>Vision</h3>
+                        <p>
+                            To create an innovation culture among Innovators by introducing them the State-of-the-art
+                            technologies and positioning the Institution as a Learning and Innovation Platform by
+                            delivering
+                            technically competent and skilled Entrepreneurs.
+                        </p>
+                        <h3>Purpose</h3>
+                        <p>
+                            The purpose of the IEDCs will be to act as an aspirational platform, for the l student
+                            entrepreneurs and tech savvy innovators, in skilling and sharpening their entrepreneurial
+                            skill
+                            sets. The selected innovators will be exposed to Innovation culture, emerging technologies
+                            and
+                            Business aspects with the implicit assumption that the delta will become an entrepreneur and
+                            all
+                            the other skilled talents will get high end jobs with the kind of exposure and skills they
+                            acquire.
+                        </p>
+                        <h3>Mission</h3>
+                        <p>
+                            To create IEDC as an Innovation Platform and to create future founders by promoting
+                            Innovation,
+                            Technology and Business Learning among student community
+                        </p>
+                        <h3>Objectives</h3>
+                        <ul>
+                            <li>To promote an innovation driven entrepreneurship culture among the students</li>
+                            <li>To develop and promote commercially viable innovative product and solution from the
+                                students.</li>
+                            <li>To promote enterprise among budding technopreneurs and thereby creating more employment
+                                opportunities</li>
+                            <li>To bridge the gap between Industry and Academia</li>
+                            <li>To support the budding Entrepreneurs through Grants and to create an entrepreneurship
+                                flavour in the academic fraternity.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="pre-container mw-100">
+            <div class="container p-2">
+                <div class="row d-flex justify-content-center align-self-center col-12">
+                    <div id="innovation">
+                        <h1 class="heading">INNOVATION GRANT</h1>
+                        <p>
+                            Technological changes through innovations and R&D has been the main driving force for
+                            increased productivity, economic growth, and social transformation and for reshaping and
+                            redefining every sphere of our lives. Hence innovations are being extensively promoted
+                            globally. Govt. of Kerala has introduced the Scheme, Innovation Grant and the following
+                            types of Innovation Grants are given to encourage innovations.
+                        </p>
+                        <h3>TYPES OF GRANTS</h3>
+
+                        <h5>Idea</h5>
+                        <p>
+                            Idea Grant will be primarily for Students for conversion of prototype to MVP and is limited
+                            to Rs. 2 lakhs/idea
+                        </p>
+                        <h5>Productization</h5>
+                        <p>
+                            Productization grant is to convert the MVP into a product and is limited to a maximum Rs. 7
+                            lakhs/idea.
+                        </p>
+                        <h5>Scale up</h5>
+                        <p>
+                            Scale up Grant helps startups with product revenue/investments to scale their business to
+                            next level, and is limited to maximum of Rs. 12 lakhs/idea.
+                        </p>
+                        <h5>R&D</h5>
+                        <p>
+                            R & D Grant (coming soon) will be given to hardware or deep tech Startups with working
+                            prototype/ IP, which need to developed into a product through R&D and is limited to Rs. 30
+                            lakhs/startup
+                        </p>
+
+                        <p>For More details: <a href="https://startupmission.kerala.gov.in/pages/ideaday">KSUM
+                                Innovation Grant</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container my-5 mw-100" id="contact">
+        <!-- Footer -->
+        <footer class="text-center text-white" style="background-color: #3f51b5">
+            <!-- Grid container -->
+            <div class="container">
+                <section class="mb-5">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-8">
+                            <p>
+                                The Innovation and Entrepreneurship Development Centres (IEDC) are platforms set up in
+                                Engineering, Management, Arts & Science Colleges, Medical Institutions, Polytechnics and
+                                Universities with an aim to provide students with an opportunity to experiment and
+                                innovate.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!-- Section: Text -->
+
+                <!-- Section: Social -->
+                <section class="text-center mb-5">
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </section>
+                <!-- Section: Social -->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                © 2022 Copyright:
+                <a class="text-white" href="http://www.naslu.ml/">Naslu.ml</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </div>
+    <!-- End of .container -->
+    <!-- Boostrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
